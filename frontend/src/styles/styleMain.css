@@ -1,0 +1,108 @@
+body{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+/* Input CSS */
+.input-data {
+  position: relative;
+  padding: 0 10px;
+}
+
+.input-data input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(139, 175, 7, 0.616);
+  outline: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+  width: 100%;
+  caret-color: rgba(255, 255, 0, 0.618);
+  padding: 0 0 0 20px;
+  text-transform: capitalize;
+}
+
+.input-data input:focus {
+  border-bottom: 1px solid rgba(0, 38, 44, 0.616);
+  color: rgb(10, 165, 111)
+}
+
+.input-data>label {
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  color: rgb(247, 247, 247);
+  pointer-events: none;
+  font-size: 13px;
+  transition: all 0.3s ease-out;
+  padding: 3px 30px;
+}
+
+.input-data input:not(:placeholder-shown)+label,
+.input-data input:focus+label {
+  transform: translateY(-16px);
+  font-size: 10px;
+  color: rgb(180, 10, 81)
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+input:-internal-autofill-selected{
+  background-color: black !important;
+}
+
+/* FONT CSS */
+
+.text_10px {
+  font-size: 10px;
+}
+.text_11px {
+  font-size: 11px;
+}
+.text_12px {
+  font-size: 12px;
+}
+.text_13px {
+  font-size: 13px;
+}
+.text_14px {
+  font-size: 14px;
+}
+.text_15px {
+  font-size: 15px;
+}
+.text_16px {
+  font-size: 16px;
+}
+.text_17px {
+  font-size: 17px;
+}
+.letter_space_1px {
+  letter-spacing: 1px;
+}
+.letter_space_2px {
+  letter-spacing: 2px;
+}
+.user_select_none{
+  user-select: none;
+}
+/* GRADIENT COLOR */
+
+.linear_gradient_blue {
+  background: linear-gradient(
+    135deg,rgba(45, 70, 58, 1),
+    rgba(54, 153, 204, 1)
+  );
+}
+.linear_gradient_grey {
+  background: linear-gradient(
+    146deg,
+    rgba(104, 104, 105, 0.823) 30%,
+    rgba(68, 176, 176, 0.8) 100%,
+    rgba(104, 116, 116, 0.8) 30%
+  );
+}
+

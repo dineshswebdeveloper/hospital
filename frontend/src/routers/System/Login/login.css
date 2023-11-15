@@ -1,0 +1,54 @@
+.login-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.511), rgba(0, 0, 0, 0.471)), url(./green_leaves.jpg);
+    background-attachment: fixed;
+}
+
+.login-form {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.802),inset 0px 0px 15px rgba(30, 101, 124, 0.802);
+    max-width: 360px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    user-select: none;
+}
+
+.login-input-data {
+    position: relative;
+    padding: 0 10px;
+}
+
+.login-input-data input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(139, 175, 7, 0.616);
+    outline: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    width: 100%;
+    caret-color: rgba(255, 255, 0, 0.618);
+    padding: 0 0 0 20px;
+    text-transform: capitalize;
+}
+
+.login-input-data input:focus {
+    border-bottom: 1px solid rgba(0, 38, 44, 0.616);
+    color: rgb(10, 165, 111)
+}
+
+.login-input-data>label {
+    position: absolute;
+    left: 0;
+    bottom: 13px;
+    color: rgb(247, 247, 247);
+    pointer-events: none;
+    font-size: 13px;
+    transition: all 0.3s ease-out;
+    padding: 3px 30px;
+}
+
+.login-input-data input:not(:placeholder-shown)+label,
+.login-input-data input:focus+label {
+    transform: translateY(-16px);
+    font-size: 10px;
+    color: rgb(180, 10, 81)
+}
